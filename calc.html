@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exp5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<form action="http://localhost:8081/calc" method="get">
+    <div class="calculator">
+        <h2>Simple Calculator</h2>
+        <input type="number" id="num1" name="a" placeholder="Enter first number">
+        <input type="number" id="num2" name="b" placeholder="Enter second number">
+        <button id="operator" name ="c" value="+">ADDITION</button>
+        <button id="operator" name ="c" value="-">SUBTRACTION</button>
+        <button id="operator" name ="c" value="*">MULTIPLICATION</button>
+        <button id="operator" name ="c" value="/">DIVISION</button>
+        <p id="result"></p>
+</form>
+    </div>
+    <style>
+        .calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h2 {
+    text-align: center;
+}
+
+.calculator input[type="number"],
+.calculator select,
+.calculator button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.calculator button {
+    background-color: #005c9d;
+    color: white;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: #07006f;
+}
+
+.calculator #result {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+    </style>
+</body>
+</html>
